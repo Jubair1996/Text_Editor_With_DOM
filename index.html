@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Editor</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+    <!-- Daisy UI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Tailwind Links -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Links -->
+    <script
+      src="https://kit.fontawesome.com/f17fe590ba.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main class="w-10/12 bg-sky-300 mx-auto mt-10 py-16 rounded">
+      <h1 class="text-center font-medium text-3xl mb-10">My Text Editor</h1>
+      <div
+        class="w-9/12 bg-sky-200 border rounded border-solid border-black mx-auto"
+      >
+        <div
+          class="flex flex-col md:flex-row flex-1 justify-between items-center px-6 my-4"
+        >
+          <div class="gap-2 flex">
+            <button id="text-bold" class="bg-sky-300 px-3 py-1 rounded">
+              <i  class="fa-solid fa-bold"></i>
+            </button>
+            <button id="text-italic" class="bg-sky-300 px-3 py-1 rounded">
+              <i class="fa-solid fa-italic"></i>
+            </button>
+            <button id="text-underline" class="bg-sky-300 px-3 py-1 rounded">
+              <i class="fa-solid fa-underline"></i>
+            </button>
+          </div>
+          <div class="gap-2 flex my-2">
+            <button id="text-left" class="bg-gray-200 px-3 py-1 rounded">
+              <i class="fa-solid fa-align-left"></i>
+            </button>
+            <button id = "text-center" class="bg-gray-200 px-3 py-1 rounded">
+              <i class="fa-solid fa-align-center"></i>
+            </button>
+            <button id="text-right" class="bg-gray-200 px-3 py-1 rounded">
+              <i class="fa-solid fa-align-right"></i>
+            </button>
+            <button id="text-justify" class="bg-gray-200 px-3 py-1 rounded">
+              <i class="fa-solid fa-align-justify"></i>
+            </button>
+          </div>
+          <div class="flex justify-center items-center gap-4">
+            <input
+              class="w-16 bg-sky-300 rounded  ps-2"
+              type="number"
+              name=""
+              id="size"
+            />
+            <i class="fa-solid fa-font"></i>
+            <input type="color" name="" id="color" />
+          </div>
+        </div>
+        <hr class="border border-black mb-6 mx-6 my-4" />
+        <div class="flex justify-center items-center mx-auto px-8">
+          <textarea id="text-area" class="w-full h-full rounded mb-6 px-2" cols="107" rows="10"></textarea>
+        </div>
+      </div>
+    </main>
+    <script src="./js/utilities.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
